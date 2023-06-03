@@ -1,0 +1,47 @@
+package doublyLinkedList;
+
+/**
+ * Represents the menu options for a program using a doubly linked list.
+ */
+public enum MenuOption {
+    ADD_NUMBER_TO_THE_TOP(1, "Add a number to the top of the list"),
+    ADD_NUMBER_TO_THE_END(2, "Add a number to the end of the list"),
+    SEARCH_NUMBER(3, "Search for a number in the list"),
+    REMOVE_NUMBER(4, "Remove a number from the list"),
+    PRINT_LIST_FROM_THE_START(5, "Print a list from start to finish"),
+    PRINT_LIST_FROM_THE_END(6, "Print a list from end to beginning"),
+    CLEAR_LIST(7, "Clear the list"),
+    IS_EMPTY(8, "Checking whether the list is empty"),
+    SIZE(9, "Checking how many members are in the list"),
+    EXIT(10, "Exit the program");
+
+    private final int optionNumber;
+    private final String description;
+
+    /**
+     * Constructs a MenuOption with the specified option number and description.
+     *
+     * @param optionNumber the number representing the menu option
+     * @param description  the description of the menu option
+     */
+    MenuOption(int optionNumber, String description) {
+        this.optionNumber = optionNumber;
+        this.description = description;
+    }
+    /**
+     * Returns the number representing the menu option.
+     *
+     * @return the option number
+     */
+    public int getOptionNumber() {
+        return optionNumber;
+    }
+    /**
+     * Returns the description of the menu option.
+     *
+     * @return the description
+     */
+    public String getDescription() {
+        return description;
+    }
+}
