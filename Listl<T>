@@ -1,0 +1,68 @@
+package doublyLinkedList;
+
+/**
+ * Represents a doubly linked list.
+ *
+ * @param <T> the type of elements stored in the list
+ */
+public interface Listl<T> {
+
+    /**
+     * Checks if the doubly linked list is empty.
+     *
+     * @return true if the list is empty, false otherwise
+     */
+    boolean isEmpty();
+
+    /**
+     * Returns the size of the doubly linked list.
+     *
+     * @return the size of the list
+     */
+    int size();
+
+    /**
+     * Adds an element to the beginning of the doubly linked list.
+     *
+     * @param data the element to be added
+     */
+    void addFirst(T data);
+
+    /**
+     * Adds an element to the end of the doubly linked list.
+     *
+     * @param data the element to be added
+     */
+    void addLast(T data);
+
+    /**
+     * Removes the first occurrence of the specified element from the doubly linked list.
+     *
+     * @param data the element to be removed
+     * @return the removed node containing the data, or null if the element was not found
+     */
+    Node<T> remove(T data);
+
+    /**
+     * Clears all elements from the doubly linked list.
+     */
+    void clear();
+
+    /**
+     * Checks if the doubly linked list contains the specified element.
+     *
+     * @param data the element to be checked
+     * @return true if the element is found, false otherwise
+     */
+    boolean contains(T data);
+
+    /**
+     * Prints the elements of the doubly linked list in forward order.
+     */
+    void printForward();
+
+    /**
+     * Prints the elements of the doubly linked list in backward order.
+     */
+    void printBackward();
+}
